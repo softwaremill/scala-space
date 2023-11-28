@@ -1,0 +1,41 @@
+@import "../../css/variables";
+
+.features {
+  padding: 2rem;
+  background: #fff;
+  //max-width: 1440px;
+  max-width: var(--ifm-container-width-xl);
+  border-radius: 5px;
+  text-align: center;
+  margin: 6rem auto;
+
+  @media (min-width: 997px) {
+    margin-top: -10rem;
+  }
+
+  @media (max-width: $mobileWide) {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    max-width: 18rem;
+    margin: auto;
+  }
+
+  a {
+    align-items: baseline;
+  }
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+

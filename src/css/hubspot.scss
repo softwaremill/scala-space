@@ -1,0 +1,54 @@
+// Hubspot form
+
+#hubspotForm {
+  background: transparent;
+  max-width: 30rem;
+  margin: auto;
+  text-align: left;
+  line-height: 1rem;
+  position: relative;
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8a8a8a;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8a8a8a;
+    width: 100%;
+    height: 5rem;
+  }
+  label {
+    font-size: 0.75rem;
+  }
+}
+
+.hs-input {
+  color: #fff;
+  height: 2rem;
+  font-size: 1rem;
+  background: transparent;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.hs-form-field label:not(.hs-error-msg) {
+  color: #8a8a8a;
+}
+.hs-button {
+  background-color: #de3d3b;
+}
+
+.hs-error-msgs {
+  //position: absolute;
+  //left: 0;
+  list-style-type: none;
+  padding: 0;
+
+  label {
+    color: #de3d3b;
+  }
+}

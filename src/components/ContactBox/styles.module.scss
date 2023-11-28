@@ -1,0 +1,53 @@
+.formWrapper {
+  padding: 4rem;
+  margin: auto;
+  background: #fff;
+  text-align: center;
+
+  > div {
+    max-width: 450px;
+    margin: auto;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  //margin-bottom: 2rem;
+}
+
+.inputBox {
+  background: #e1e1e1;
+  max-width: 650px;
+  margin: auto;
+  padding: 0;
+
+  input {
+    border: none;
+    width: 80%;
+    height: 100%;
+    padding: 1rem;
+    background: transparent;
+  }
+
+  button {
+    width: 20%;
+    border: none;
+    padding: 0.5rem;
+    background: transparent;
+    font-weight: bold;
+    color: var(--inactive);
+    border-left: 1px solid #bdbdbd;
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: #d6d6d6;
+  border: none;
+}
+
+label {
+  color: #565656;
+  font-size: 0.75rem;
+  vertical-align: text-bottom;
+  padding-left: 10px;
+}

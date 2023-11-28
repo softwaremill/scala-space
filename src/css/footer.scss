@@ -1,0 +1,36 @@
+.footer {
+  padding: 2rem 0;
+
+  &__link-item {
+    font-size: 1rem;
+  }
+  &--dark {
+    background: #000;
+  }
+  &__copyright {
+    margin-top: 2rem;
+    text-align: right;
+    font-size: 0.75rem;
+    color: #848282;
+    border-top: 1px solid;
+    padding-top: 1rem;
+  }
+
+  .label {
+    font-size: 1rem;
+    padding: 1rem 0;
+    display: flex;
+  }
+
+  .socials {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 8rem;
+    padding-top: 1rem;
+
+    a {
+      display: inline-block;
+    }
+  }
+}

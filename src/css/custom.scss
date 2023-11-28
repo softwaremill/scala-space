@@ -1,0 +1,89 @@
+@import "variables";
+@import "buttons.scss";
+@import "navbar";
+@import "hero";
+@import "footer";
+@import "hubspot";
+
+body {
+  background: #efefef;
+  font-size: 18px;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+.header {
+  border-bottom: 1px solid;
+}
+
+.borderRight {
+  padding: 2rem;
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: 997px) {
+    border-right: 1px solid #d6d6d6;
+    border-bottom: none;
+    padding: 0 2rem;
+
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.accentColor {
+  color: #de3d3b;
+}
+
+.wrapper {
+  padding: 0 1rem;
+
+  @media (min-width: $mobileWide) {
+    padding: 0 4rem;
+  }
+}
+
+section {
+  position: relative;
+}
+
+.textLink {
+  color: #000;
+  text-decoration: underline;
+}
+
+.gdprWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+///map
+
+.imageBg {
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+// links hub
+
+.linksContainer {
+  @media (min-width: 997px) {
+  .col:last-child {
+    margin-top: 6rem;
+  }
+  }
+}
+
+
+

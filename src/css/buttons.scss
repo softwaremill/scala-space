@@ -1,0 +1,52 @@
+.button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+
+  &.aligned {
+    display: flex;
+    align-items: center;
+    max-width: 9rem;
+    justify-content: center;
+
+    img {
+      margin-left: 0.75rem;
+    }
+  }
+
+  &.primary {
+    background: var(--ifm-color-primary);
+    color: var(--basic-light);
+  }
+
+  &.secondary {
+    background: var(--basic-light);
+    color: var(--basic-dark);
+  }
+
+  &.text {
+    &__primary {
+      color: var(--basic-dark);
+      padding: 0;
+
+      span {
+        color: var(--ifm-color-primary);
+      }
+    }
+
+    &__secondary {
+      color: var(--basic-dark);
+    }
+  }
+
+  &.dark {
+    color: var(--basic-dark);
+
+    &__active {
+      background: var(--basic-dark);
+    }
+
+    &__inactive {
+      background: var(--inactive);
+    }
+  }
+}

@@ -78,18 +78,6 @@ const config = {
         },
         items: [
           {
-            to: "/events",
-            position: "left",
-            label: "Events",
-            activeBasePath: "events",
-          },
-          {
-            to: "https://softwaremill.com/scala",
-            activeBasePath: "stack",
-            label: "Stack",
-            position: "left",
-          },
-          {
             html: '<a class="button primary aligned">Talk to us <img src="img/arrow_b.svg"/></a>',
             to: "/contact",
             position: "right",
@@ -128,14 +116,6 @@ const config = {
               {
                 label: "Scala space",
                 to: "/",
-              },
-              {
-                label: "Events",
-                to: "/events",
-              },
-              {
-                label: "Stack",
-                to: "https://softwaremill.com/scala",
               },
               {
                 label: "Privacy Policy",

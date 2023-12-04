@@ -78,7 +78,7 @@ const config = {
         },
         items: [
           {
-            html: '<a class="button primary aligned">Talk to us <img src="img/arrow_b.svg"/></a>',
+            html: '<span class="button accent aligned">Talk to us <img src="img/arrow_b_black.svg"/></span>',
             to: "/contact",
             position: "right",
           },
@@ -148,6 +148,7 @@ const config = {
         disableSwitch: true,
       },
     }),
+    stylesheets: ['https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap']
 };
 
 module.exports = config;

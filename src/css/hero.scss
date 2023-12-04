@@ -1,16 +1,9 @@
 .hero {
-  align-items: start;
-  padding-top: 8rem;
-  line-height: 6.5rem;
   background: #000;
+  padding: 0;
 
   .container {
-    padding: 0;
-  }
-
-
-  &.centered {
-    text-align: center;
+    padding: 90px 20px;
   }
 
   .emph {
@@ -18,18 +11,26 @@
   }
 
   &__title {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font-secondary);
+    margin-bottom: 80px;
+
+    h1 {
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 2.3rem;
+      font-size: 30px;
+      font-weight: 600;
+    }
 
     @media (min-width: $mobileWide) {
       font-size: 6rem;
       line-height: 6.5rem;
     }
-  }
-
-  p {
-    line-height: 2rem;
   }
 }
 
@@ -106,21 +107,5 @@
 
   @media (max-width: 996px) {
     background-image: none !important;
-  }
-
-    @media screen and (min-width: $mobileWide) {
-    padding: 8rem;
-    height: 50rem;
-  }
-
-  .container {
-    padding: 0;
-  }
-}
-
-@media (max-width: $mobileWide) {
-  .container {
-    overflow: hidden;
-    padding: 0 0.5rem;
   }
 }

@@ -2,25 +2,11 @@ import React, { useEffect } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
+import { useCreateForm } from "./_useCreateForm";
 
 export default function ContactPage() {
   const { siteConfig } = useDocusaurusContext();
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/v2.js";
-    document.body.appendChild(script);
-
-    script.addEventListener("load", () => {
-      if (window.hbspt) {
-        window.hbspt.forms.create({
-          portalId: "2404976",
-          formId: "62a4e045-63ff-41c2-a9dd-66b4f2d54a77",
-          target: "#hubspotForm",
-        });
-      }
-    });
-  }, []);
+  useCreateForm();
 
   return (
     <Layout
@@ -29,14 +15,17 @@ export default function ContactPage() {
     >
       <main>
         <section>
-          <div className="hero centered">
+          <div className="hero">
             <div className="container">
-              <h1 className="hero__title">
-                Let's
-                <span className="accentColor"> talk</span>
-              </h1>
-              <p className="emph mb-6">about all things Scala-related</p>
-              <div id="hubspotForm" className="hubspot-form" />
+              <div className="hero__title">
+                <h1>
+                  Let's
+                  <span className="color-accent-light"> talk</span>
+                </h1>
+                <p className="emph m-0">about all things</p>
+                <p className="emph">Scala-related</p>
+              </div>
+              <div id="hubspotForm" />
             </div>
           </div>
         </section>
@@ -55,7 +44,7 @@ export default function ContactPage() {
 
             <div
               className={clsx("col col--6 imageBg")}
-              style={{ "background-image": "url(./img/galaxy.png)" }}
+              style={{ backgroundImage: "url(./img/galaxy.png)" }}
             />
           </div>
         </section>

@@ -63,7 +63,7 @@ export default function EventsFeatures() {
       <div className={styles.features}>
         <div className="container">
           <h2 className="title">
-            <span className="accentColor">Elevating Developers</span>,
+            <span className="color-primary">Elevating Developers</span>,
             Empowering Industries
           </h2>
           <div className="row">

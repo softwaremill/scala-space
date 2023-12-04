@@ -7,7 +7,8 @@
 
   &__items {
     &--right {
-      background: var(--ifm-color-primary);
+      background: var(--ifm-color-accent-light);
+      color: var(--basic-dark);
       border-radius: 5px;
       padding: 0;
       height: 2.5rem;

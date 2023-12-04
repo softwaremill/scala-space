@@ -23,6 +23,12 @@
     color: var(--basic-dark);
   }
 
+  &.accent {
+    color: var(--basic-dark);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   &.text {
     &__primary {
       color: var(--basic-dark);

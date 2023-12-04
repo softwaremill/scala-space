@@ -1,5 +1,5 @@
 @import "variables";
-@import "buttons.scss";
+@import "buttons";
 @import "navbar";
 @import "hero";
 @import "footer";
@@ -7,7 +7,8 @@
 
 body {
   background: #efefef;
-  font-size: 18px;
+  font-size: 21px;
+  font-family: var(--font-primary);
 }
 
 .title {
@@ -26,7 +27,6 @@ body {
     border-right: 1px solid #d6d6d6;
     border-bottom: none;
     padding: 0 2rem;
-
   }
 
   &:last-child {
@@ -34,8 +34,12 @@ body {
   }
 }
 
-.accentColor {
-  color: #de3d3b;
+.color-accent-light {
+  color: var(--ifm-color-accent-dark);
+}
+
+.color-primary {
+  color: var(--ifm-color-primary);
 }
 
 .wrapper {
@@ -79,11 +83,8 @@ section {
 
 .linksContainer {
   @media (min-width: 997px) {
-  .col:last-child {
-    margin-top: 6rem;
-  }
+    .col:last-child {
+      margin-top: 6rem;
+    }
   }
 }
-
-
-

@@ -64,8 +64,8 @@ function Box({ links, title, description, background }) {
           <p>{description}</p>
           <div className={styles.linksWrapper}>
           <div className={styles.links}>
-            {links.map(({ to, label }) => (
-              <a className="button dark__active" href={to} target="_blank">
+            {links.map(({ to, label }, idx) => (
+              <a key={idx} className="button dark__active" href={to} target="_blank">
                 {label}
                 <span className="icon-arrow" />
               </a>
@@ -83,7 +83,7 @@ export default function LinksHub() {
     <section>
       <div className="container">
         <h2 className="title">
-          <span className="accentColor">Simple Developers Tools </span>
+          <span className="color-primary">Simple Developers Tools </span>
           for Everyday Problems
         </h2>
           <div className="row linksContainer">

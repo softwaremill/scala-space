@@ -1,25 +1,37 @@
 .footer {
-  padding: 2rem 0;
+  padding: 2rem 20px;
 
-  &__link-item {
-    font-size: 1rem;
+  .row {
+    margin: 0;
+
+    .col {
+      padding: 0;
+    }
   }
+
+  &__item a,
+  &__item p,
+  &__item .label {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &__item .button.aligned {
+    width: 100%;
+    max-width: unset;
+  }
+
   &--dark {
     background: #000;
   }
+
   &__copyright {
     margin-top: 2rem;
-    text-align: right;
+    text-align: left;
     font-size: 0.75rem;
     color: #848282;
     border-top: 1px solid;
     padding-top: 1rem;
-  }
-
-  .label {
-    font-size: 1rem;
-    padding: 1rem 0;
-    display: flex;
   }
 
   .socials {

@@ -32,17 +32,7 @@ const config = {
     locales: ["en"],
   },
 
-  plugins: [
-    "docusaurus-plugin-sass",
-    // 'docusaurus-plugin-hubspot',
-  ],
-
-  // webpack: {
-  //   alias: {
-  //     'leaflet-hash': 'leaflet-hash/dist/leaflet-hash'
-  //   },
-  //   // Other webpack configurations
-  // },
+  plugins: ["docusaurus-plugin-sass"],
 
   presets: [
     [
@@ -51,13 +41,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.scss"),
+          customCss: require.resolve("./src/css/index.scss"),
         },
       }),
     ],
@@ -66,10 +54,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        // title: 'Scala Pages_',
         hideOnScroll: true,
 
         logo: {
@@ -86,28 +72,11 @@ const config = {
       },
       footer: {
         style: "dark",
-        // logo: {
-        //   alt: 'Meta Open Source Logo',
-        //   src: 'img/logo_white.png',
-        //   href: 'https://opensource.fb.com',
-        //   height: 51,
-        // },
         links: [
           {
             items: [
               {
                 html: '<img src="img/scalaspace-logo-white.svg"/>',
-              },
-              {
-                html: "<span class='label'>Follow us</span>",
-              },
-              {
-                html:
-                  '<div class="socials">' +
-                  '<a href="https://twitter.com/ScalaSpace" target="_blank"><img src="./img/logo-x.svg"/></a>' +
-                  '<a href="https://www.instagram.com/softwaremill_vibes/" target="_blank"><img src="./img/logo-blank.svg"/></a>' +
-                  '<a href="https://www.linkedin.com/showcase/scala-space" target="_blank"><img src="./img/logo-linkedin.svg"/></a>' +
-                  "</div>",
               },
             ],
           },
@@ -130,15 +99,30 @@ const config = {
           {
             items: [
               {
-                html: '<p>Get involved</p>',
+                html: "<p>Get involved:</p>",
               },
               {
                 html: '<a class="button secondary aligned" href="/contact">Talk to us <img src="img/arrow_d.svg"/></a>',
               },
             ],
           },
+          {
+            items: [
+              {
+                html: "<span class='label'>Follow us</span>",
+              },
+              {
+                html:
+                  '<div class="socials">' +
+                  '<a href="https://twitter.com/ScalaSpace" target="_blank"><img src="./img/logo-x.svg"/></a>' +
+                  '<a href="https://www.instagram.com/softwaremill_vibes/" target="_blank"><img src="./img/logo-blank.svg"/></a>' +
+                  '<a href="https://www.linkedin.com/showcase/scala-space" target="_blank"><img src="./img/logo-linkedin.svg"/></a>' +
+                  "</div>",
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SML / Virtus Lab.`,
+        copyright: `Copyright &copy; ${new Date().getFullYear()} SML / Virtus Lab.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -148,7 +132,10 @@ const config = {
         disableSwitch: true,
       },
     }),
-    stylesheets: ['https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap']
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap",
+  ],
 };
 
 module.exports = config;

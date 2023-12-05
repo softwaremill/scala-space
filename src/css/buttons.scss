@@ -14,7 +14,7 @@
   }
 
   &.primary {
-    background: var(--ifm-color-primary);
+    background: var(--color-primary);
     color: var(--basic-light);
   }
 
@@ -35,7 +35,7 @@
       padding: 0;
 
       span {
-        color: var(--ifm-color-primary);
+        color: var(--color-primary);
       }
     }
 

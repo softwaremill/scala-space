@@ -2,11 +2,14 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { useCreateForm } from "./_useCreateForm";
+import { useScreenDetector } from "../../hooks/useScreenDetector";
 import styles from "./styles.module.scss";
 import VLMobile from "../../assets/virtus-mobile.webp";
+import VLDesktop from "../../assets/virtus-desktop.webp";
 
 export default function ContactPage() {
   const { siteConfig } = useDocusaurusContext();
+  const { isDesktop } = useScreenDetector();
   useCreateForm();
 
   return (
@@ -23,15 +26,17 @@ export default function ContactPage() {
                   Let's
                   <span className="color-accent-light"> talk</span>
                 </h1>
-                <p className="emph m-0">about all things</p>
-                <p className="emph">Scala-related</p>
+                <div className={styles.subtitle}>
+                  <p className="emph m-0">about all things</p>
+                  <p className="emph">Scala-related</p>
+                </div>
               </div>
               <div id="hubspot-form" className="contact-form" />
             </div>
           </div>
         </section>
 
-        <section>
+        <section className={styles["section--2"]}>
           <div className={styles["box--1"]}>
             <h3>GDPR compliance</h3>
             <p>DPO / RODO</p>
@@ -40,7 +45,12 @@ export default function ContactPage() {
             </a>
           </div>
           <div className={styles["box--2"]}>
-            <img src={VLMobile} alt="VirtusLab" width="375" height="279" />
+            <img
+              src={isDesktop ? VLDesktop : VLMobile}
+              alt="VirtusLab"
+              width="375"
+              height="279"
+            />
           </div>
         </section>
       </main>

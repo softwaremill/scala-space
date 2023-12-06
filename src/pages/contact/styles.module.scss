@@ -1,3 +1,5 @@
+@import "../../css/variables.scss";
+
 .box {
   flex: 1;
 
@@ -19,6 +21,24 @@
     img {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .subtitle {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  .section--2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .box--1 {
+      margin: 0 auto;
+      align-self: center;
     }
   }
 }

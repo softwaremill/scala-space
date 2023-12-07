@@ -36,18 +36,15 @@ const config = {
 
   presets: [
     [
-      "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+      {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          sidebarPath: "./sidebars.js",
         },
         theme: {
           customCss: require.resolve("./src/css/index.scss"),
         },
-      }),
+      },
     ],
   ],
 
@@ -57,7 +54,6 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         hideOnScroll: true,
-
         logo: {
           alt: "scala pages",
           src: "img/scalaspace-logo-color.svg",

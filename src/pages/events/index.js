@@ -19,7 +19,7 @@ export default function Index() {
             <div className="container">
               <h1 className="hero__title">
                 Where
-                <span className="accentColor">
+                <span className="color-primary">
                   {" "}
                   Scala
                   <br />

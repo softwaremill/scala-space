@@ -1,62 +1,27 @@
 :root {
-  --ifm-color-primary: #de3d3b;
-  --ifm-color-primary-dark: #d82724;
-  --ifm-color-primary-darker: #d82724;
-  --ifm-color-primary-darkest: #a81e1c;
-  --ifm-color-primary-light: #e25553;
-  --ifm-color-primary-lighter: #e4615f;
-  --ifm-color-primary-lightest: #ea8483;
+  --color-primary: #de3d3b;
+
+  --color-accent-light: #00c859;
+  --color-accent-dark: #00a74e;
+
+  --color-grey: #c0c0c0;
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-link-color: #fff;
   --ifm-hero-text-color: #ececec;
 
-  --basic-light: #ECECEC;
+  --basic-light: #ececec;
   --basic-dark: #000;
   --inactive: #3c3c3c;
 
   --ifm-spacing-horizontal: 4rem;
+
+  --font-primary: "Source Sans 3";
+  --font-secondary: "Space Grotesk";
+
+  --border: 1px solid var(--color-grey);
 }
 
-$desktopWide: 1320px; //1440
-$mobileWide: 768px;
-$mapHeight: 1050px;
-
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
-@font-face {
-  font-family: "icomoon";
-  src: url("/static/fonts/icomoon.ttf");
-  src: url("/static/fonts/icomoon.ttf?qowvd9") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-arrow {
-  margin-left: 1rem;
-}
-.icon-arrow:before {
-  content: "\e900";
-}
-
-
-// spacing variables
-
-.mb-4 {margin-bottom: 4rem;}
-.mb-6 {margin-bottom: 6rem;}
+$breakpoint-desktop: 1320px;
+$breakpoint-mobile: 768px;

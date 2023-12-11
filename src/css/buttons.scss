@@ -14,7 +14,7 @@
   }
 
   &.primary {
-    background: var(--ifm-color-primary);
+    background: var(--color-primary);
     color: var(--basic-light);
   }
 
@@ -23,13 +23,19 @@
     color: var(--basic-dark);
   }
 
+  &.accent {
+    color: var(--basic-dark);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   &.text {
     &__primary {
       color: var(--basic-dark);
       padding: 0;
 
       span {
-        color: var(--ifm-color-primary);
+        color: var(--color-primary);
       }
     }
 

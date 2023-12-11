@@ -15,22 +15,19 @@ export default function Home() {
     >
       <main>
         <section
-          className="mapHero"
+          className="landing-hero"
           style={{ backgroundImage: `url('/img/hero.png')` }}
         >
           <div className="container">
-            <h1 className="hero__title">
+            <h1 className="h1">
               Where
-              <span className="accentColor">
-                {" "}
-                Scala
-                <br />
-              </span>
+              <span className="color-primary"> Scala</span>
+              <br />
               Meets the Industry
             </h1>
-            <p>
-              Explore our tooling, open-source software (OSS), and the dynamic ecosystem <br />
-              we actively contribute to, engage with, and shape.
+            <p className="landing-hero-info">
+              Explore our tooling, open-source software (OSS), and the dynamic
+              ecosystem we actively contribute to, engage with, and shape.
             </p>
             <div className="heroLinks">
               <a href="https://www.virtuslab.com/" target="_blank">

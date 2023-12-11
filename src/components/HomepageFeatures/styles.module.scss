@@ -1,4 +1,4 @@
-@import "../../css/variables";
+@import "../../css/variables.scss";
 
 .features {
   display: flex;
@@ -9,8 +9,8 @@
   background: #fff;
   margin: 6rem auto;
 
-  @media (min-width: $mobileWide) {
-      padding: 2rem 0;
+  @media (min-width: $breakpoint-mobile) {
+    padding: 2rem 0;
   }
 }
 
@@ -21,11 +21,8 @@
 
 .box {
   padding: 0.5rem 2rem;
-  //p {
-  //  max-width: 20rem;
-  //}
 }
 
 h3 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-secondary);
 }

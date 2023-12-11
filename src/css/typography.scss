@@ -1,0 +1,12 @@
+@import "../css/variables.scss";
+
+.h1 {
+  font-weight: 600;
+  font-size: 60px;
+  font-family: var(--font-secondary);
+  color: #fff;
+
+  @media (min-width: $breakpoint-mobile) {
+    font-size: 120px;
+  }
+}

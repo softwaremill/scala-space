@@ -1,18 +1,27 @@
+@import "../../css/variables.scss";
+
 .formWrapper {
-  padding: 4rem;
+  padding: 4rem 20px;
   margin: auto;
-  background: #fff;
+  background: #f7f7f7;
   text-align: center;
 
   > div {
     max-width: 450px;
     margin: auto;
   }
-}
 
-h2 {
-  font-size: 1.8rem;
-  //margin-bottom: 2rem;
+  h2 {
+    font-size: 35px;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    padding: 6rem 20px;
+
+    h2 {
+      text-align: center;
+    }
+  }
 }
 
 .inputBox {

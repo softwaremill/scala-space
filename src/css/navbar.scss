@@ -1,3 +1,5 @@
+@import "../css/variables.scss";
+
 .navbar {
   background-color: #000;
 
@@ -7,7 +9,8 @@
 
   &__items {
     &--right {
-      background: var(--ifm-color-primary);
+      background: var(--color-accent-light);
+      color: var(--basic-dark);
       border-radius: 5px;
       padding: 0;
       height: 2.5rem;
@@ -18,7 +21,6 @@
       flex-direction: row-reverse;
       justify-content: space-between;
     }
-
   }
   &__logo {
     img {
@@ -32,8 +34,7 @@
   }
 
   &__inner {
-    border-bottom: 1px solid #494949;
-    max-width: $desktopWide;
+    max-width: $breakpoint-desktop;
     margin: auto;
     padding: 0.25rem 0 0.75rem 0;
   }
@@ -64,4 +65,3 @@
     padding: 2rem;
   }
 }
-

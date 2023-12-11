@@ -1,10 +1,48 @@
-@import "../../css/variables";
+@import "../../css/variables.scss";
 
-.box {
+.hub {
+  h2 {
+    padding: 3rem 20px;
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    margin-bottom: 6rem;
+
+    h2 {
+      padding: 6rem 20px;
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+}
+
+.cards {
+  display: grid;
+
+  @media (min-width: $breakpoint-mobile) {
+    grid-template-rows: 110px 1fr 1fr 110px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
+  }
+}
+
+.card {
   background: #fff;
-  margin: 3rem 0;
-  border-radius: 8px;
-  overflow: hidden;
+
+  @media (min-width: $breakpoint-mobile) {
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:first-of-type {
+      grid-row: 1 / span 3;
+    }
+
+    &:last-of-type {
+      grid-row: 2 / span 3;
+    }
+  }
 
   .cover {
     height: 12rem;
@@ -15,7 +53,11 @@
   article {
     padding: 2rem 1rem;
 
-    @media (min-width: $mobileWide) {
+    h3 {
+      font-size: 25px;
+    }
+
+    @media (min-width: $breakpoint-mobile) {
       padding: 3rem;
     }
   }
@@ -25,24 +67,14 @@
     padding-top: 2rem;
 
     .links {
-      @media (min-width: $mobileWide) {
-        max-width: 23rem;
-      }
-    }
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
 
-    a {
-      width: 100%;
-
-      @media (min-width: $mobileWide) {
-        width: auto;
-        margin: 0 1.5rem 1.5rem 0;
+      @media (min-width: $breakpoint-mobile) {
+        flex-direction: row;
+        flex-wrap: wrap;
       }
     }
   }
 }
-
-.title {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-

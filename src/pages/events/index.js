@@ -1,13 +1,10 @@
 import React from "react";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "../../components/HomepageFeatures";
 import ContactBox from "../../components/ContactBox";
 import MapComponent from "../../components/MapComponent";
 
 export default function Index() {
-  const { siteConfig } = useDocusaurusContext();
-
   return (
     <Layout
       title={siteConfig.title}
@@ -18,9 +15,8 @@ export default function Index() {
           <div className="hero">
             <div className="container">
               <h1 className="hero__title">
-                Where
+                Where 
                 <span className="color-primary">
-                  {" "}
                   Scala
                   <br />
                 </span>

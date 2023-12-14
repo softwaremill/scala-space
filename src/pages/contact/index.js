@@ -2,10 +2,10 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import { useCreateForm } from "./_useCreateForm";
-import { useScreenDetector } from "../../hooks/useScreenDetector";
+import { useScreenDetector } from "@hooks/useScreenDetector";
 import styles from "./styles.module.scss";
-import VLMobile from "../../assets/virtus-mobile.webp";
-import VLDesktop from "../../assets/virtus-desktop.webp";
+import VLMobile from "@assets/images/virtus-mobile.webp";
+import VLDesktop from "@assets/images/virtus-desktop.webp";
 
 export default function ContactPage() {
   const { siteConfig } = useDocusaurusContext();

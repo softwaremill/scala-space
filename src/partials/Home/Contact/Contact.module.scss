@@ -1,0 +1,59 @@
+@import "@css/variables";
+
+.contact {
+  padding: 50px 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px 0;
+
+  input {
+    height: 40px;
+    border: 1px solid $color-gray-400;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: 2px solid transparent;
+    padding: 15px;
+    font-family: $font-primary;
+    font-size: $font-size-sm;
+    transition: outline 0.1s;
+
+    &:focus {
+      outline: 2px solid $color-dark;
+    }
+  }
+
+  button {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-gray-300;
+    font-family: $font-primary;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  input:focus {
+    outline: 2px solid transparent !important;
+  }
+
+  label {
+    color: $color-gray;
+    font-size: $font-size-xs;
+    line-height: 18px;
+  }
+}
+
+.logo {
+  text-align: center;
+}

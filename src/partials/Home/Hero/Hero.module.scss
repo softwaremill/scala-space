@@ -1,0 +1,27 @@
+@import "@css/variables";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: $color-dark;
+}
+
+.brands {
+  display: flex;
+  align-items: baseline;
+  border: 1px solid $color-gray-100;
+  margin-top: 70px;
+
+  div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  div:first-of-type {
+    border-right: 1px solid $color-gray-100;
+  }
+}

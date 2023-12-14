@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Scala Toolkit",
+    "description": "A set of Libraries desgined to effectively perform common programming tasks",
+    "background": "toolkit",
+    "links": [
+      {
+        "to": "https://docs.scala-lang.org/toolkit/http-client-intro.html",
+        "label": "Munis"
+      },
+      {
+        "to": "https://docs.scala-lang.org/toolkit/http-client-intro.html",
+        "label": "sttp"
+      },
+      {
+        "to": "https://docs.scala-lang.org/toolkit/json-intro.html",
+        "label": "UPickle/Ujson"
+      },
+      {
+        "to": "https://docs.scala-lang.org/toolkit/os-intro.html",
+        "label": "Os-Lib"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Useful Libraries",
+    "description": "Open Source tools that Scala Community use and appreciate.",
+    "background": "libs",
+    "links": [
+      {
+        "to": "https://github.com/softwaremill/tapir",
+        "label": "Tapir"
+      },
+      {
+        "to": "https://github.com/scalameta/metals",
+        "label": "Metals"
+      },
+      {
+        "to": "https://github.com/scalacenter/bloop",
+        "label": "Bloop"
+      }
+    ]
+  }
+]

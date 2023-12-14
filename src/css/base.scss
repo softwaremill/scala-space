@@ -1,0 +1,49 @@
+@import 'variables'; 
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-md;
+  font-weight: 400;
+  line-height: 30px;
+  color: $color-dark;
+  background-color: $color-light;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: $color-dark;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  font-size: $font-size-sm;
+}

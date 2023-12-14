@@ -1,48 +1,20 @@
 import React from "react";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import EventsFeatures from "../components/EventsFeatures";
-import LinksHub from "../components/LinksHub";
-import ContactBox from "../components/ContactBox";
+import { Layout } from "@components/Layout/Layout";
+import { Hero } from "@partials/Home/Hero/Hero";
+import { Events } from "@partials/Home/Events/Events";
+import { Tools } from "@partials/Home/Tools/Tools";
+import { Contact } from "@partials/Home/Contact/Contact";
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
-
   return (
     <Layout
-      title={siteConfig.title}
-      description="Description will go into a meta tag in <head />"
+      title="Scala Space"
+      description="Learn about our tooling, OSS, nd the ecosystems we help build, use, and participate in."
     >
-      <main>
-        <section
-          className="landing-hero"
-          style={{ backgroundImage: `url('/img/hero.png')` }}
-        >
-          <div className="container">
-            <h1 className="h1">
-              Where
-              <span className="color-primary"> Scala</span>
-              <br />
-              Meets the Industry
-            </h1>
-            <p className="landing-hero-info">
-              Explore our tooling, open-source software (OSS), and the dynamic
-              ecosystem we actively contribute to, engage with, and shape.
-            </p>
-            <div className="heroLinks">
-              <a href="https://www.virtuslab.com/" target="_blank">
-                <img src="./img/virtuslab.svg" />
-              </a>
-              <a href="https://www.softwaremill.com/" target="_blank">
-                <img src="./img/softwaremill.svg" />
-              </a>
-            </div>
-          </div>
-        </section>
-        <EventsFeatures />
-        <LinksHub />
-        <ContactBox />
-      </main>
+      <Hero />
+      <Events />
+      <Tools />
+      <Contact />
     </Layout>
   );
 }

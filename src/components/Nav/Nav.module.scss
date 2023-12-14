@@ -1,0 +1,55 @@
+@import "@css/variables";
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-left: 30px;
+  background-color: $color-dark;
+  border-bottom: 1px solid $color-gray;
+  transition: transform 0.2s;
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.hidden {
+  transform: translateY(-72px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $color-light;
+  }
+}
+
+.toggler-container {
+  margin-left: auto;
+}
+
+.toggler {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  width: 72px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}

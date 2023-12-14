@@ -1,0 +1,20 @@
+@import "@css/variables";
+
+.tool {
+  background-color: $color-white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $color-gray-200;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+}

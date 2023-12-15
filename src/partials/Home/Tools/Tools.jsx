@@ -4,7 +4,7 @@ import styles from "./Tools.module.scss";
 
 export const Tools = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.header}>
         <h2 className="h2">
           <span className="color-primary">Simple Developers Tools </span>

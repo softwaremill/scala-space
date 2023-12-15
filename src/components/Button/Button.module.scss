@@ -17,15 +17,33 @@
 }
 
 .primary {
-    background-color: $color-primary;
+  background-color: $color-primary;
 }
 
 .secondary {
-    background-color: $color-secondary;
+  background-color: $color-secondary;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $color-dark;
+  }
 }
 
 .dark {
   background-color: $color-dark;
+}
+
+.light {
+  background-color: $color-gray-300;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $color-dark;
+  }
 }
 
 .white {

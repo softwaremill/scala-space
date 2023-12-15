@@ -1,4 +1,4 @@
-$breakpoint-desktop: 1320px;
+$max-width: 1320px;
 $breakpoint-mobile: 768px;
 
 $font-primary: "Source Sans 3";
@@ -16,10 +16,12 @@ $font-size-4xl: 120px;
 $color-white: #fff;
 $color-light: #ececec;
 $color-dark: #000;
+$color-primary: #de3d3b;
+$color-secondary: #00a74e;
+
 $color-gray: #494949;
 $color-gray-100: #a1a1a1;
 $color-gray-200: #bababa;
 $color-gray-300: #e1e1e1;
 $color-gray-400: #c6c6c6;
-$color-primary: #de3d3b;
-$color-secondary: #00a74e;
+$color-gray-500: #848484;

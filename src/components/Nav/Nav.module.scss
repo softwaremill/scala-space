@@ -1,18 +1,25 @@
 @import "@css/variables";
 
-.nav {
+.container {
   position: fixed;
   top: 0;
   left: 0;
   height: 72px;
   width: 100%;
+
+  background-color: $color-dark;
+  transition: transform 0.2s;
+}
+
+.nav {
   display: flex;
   align-items: center;
   gap: 30px;
+  height: 100%;
+  margin: 0 auto;
   padding-left: 30px;
-  background-color: $color-dark;
+  max-width: $max-width;
   border-bottom: 1px solid $color-gray;
-  transition: transform 0.2s;
 }
 
 .visible {
@@ -36,10 +43,6 @@
   a:active {
     color: $color-light;
   }
-}
-
-.toggler-container {
-  margin-left: auto;
 }
 
 .toggler {

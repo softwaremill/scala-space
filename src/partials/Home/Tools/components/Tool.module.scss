@@ -2,6 +2,15 @@
 
 .tool {
   background-color: $color-white;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: ($breakpoint-mobile)) {
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }
 
 .info {
@@ -17,4 +26,9 @@
   flex-direction: column;
   gap: 30px;
   padding-top: 30px;
+
+  @media (min-width: ($breakpoint-mobile)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

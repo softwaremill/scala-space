@@ -9,23 +9,46 @@ export const Button = ({
   to,
   variant = "dark",
   fullWidth = false,
+  withIcon = true,
+  classes = "",
 }) => {
   if (type === "external") {
     return (
       <a
+        target="_blank"
         className={`${styles.btn} ${styles[variant]} ${
           fullWidth ? styles["w-full"] : ""
-        }`}
+        } ${classes}`}
         href={to}
       >
         {children}
-        {variant === "white" ? <ArrowBlack /> : <ArrowWhite />}
+        {withIcon &&
+          (variant === "white" || variant === "secondary" ? (
+            <ArrowBlack />
+          ) : (
+            <ArrowWhite />
+          ))}
       </a>
     );
   }
 
   if (type === "internal") {
-    return <Link to={to}>{children}</Link>;
+    return (
+      <Link
+        to={to}
+        className={`${styles.btn} ${styles[variant]} ${
+          fullWidth ? styles["w-full"] : ""
+        } ${classes}`}
+      >
+        {children}
+        {withIcon &&
+          (variant === "white" || variant === "secondary" ? (
+            <ArrowBlack />
+          ) : (
+            <ArrowWhite />
+          ))}
+      </Link>
+    );
   }
 
   throw new Error('Unknown button type. Select "internal" or "external"');

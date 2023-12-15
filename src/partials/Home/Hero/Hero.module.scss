@@ -6,6 +6,33 @@
   justify-content: center;
   height: 100vh;
   background: $color-dark;
+
+  @media (min-width: ($breakpoint-mobile)) {
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 360px;
+    background-image: url("@assets/images/home-bg-desktop.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-shadow:
+      rgba(0, 0, 0, 0.4) 0px -200px 60px -28px inset,
+      rgba(0, 0, 0, 0.4) 0px 200px 60px -28px inset;
+
+    p {
+      margin-top: 30px;
+      max-width: 480px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 .brands {
@@ -23,5 +50,9 @@
 
   div:first-of-type {
     border-right: 1px solid $color-gray-100;
+  }
+
+  @media (min-width: ($breakpoint-mobile)) {
+    max-width: 380px;
   }
 }

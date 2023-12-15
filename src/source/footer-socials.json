@@ -1,0 +1,8 @@
+[
+  { "to": "https://twitter.com/ScalaSpace", "brand": "x" },
+  {
+    "to": "https://www.instagram.com/softwaremill_vibes/",
+    "brand": "instagram"
+  },
+  { "to": "https://www.linkedin.com/showcase/scala-space", "brand": "linkedin" }
+]

@@ -1,0 +1,15 @@
+@import "@css/variables";
+
+.cards {
+  @media (min-width: ($breakpoint-mobile)) {
+    display: grid;
+
+    &.cards2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &.cards3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

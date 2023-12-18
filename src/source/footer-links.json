@@ -1,18 +1,22 @@
 [
   {
     "to": "/",
-    "label": "Scala Space"
+    "label": "Scala Space",
+    "type": "internal"
   },
   {
     "to": "/events",
-    "label": "Events"
+    "label": "Events",
+    "type": "internal"
   },
   {
     "to": "https://virtuslab.com/privacy-policy/",
-    "label": "Privacy Policy"
+    "label": "Privacy Policy",
+    "type": "external"
   },
   {
     "to": "/contact",
-    "label": "Contact"
+    "label": "Contact",
+    "type": "internal"
   }
 ]

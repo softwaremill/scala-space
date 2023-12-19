@@ -14,14 +14,16 @@ const createForm = () => {
 
 export const useCreateForm = () => {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/v2.js";
-    document.body.appendChild(script);
+    if (typeof window !== "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://js.hsforms.net/forms/v2.js";
+      document.body.appendChild(script);
 
-    script.addEventListener("load", createForm);
+      script.addEventListener("load", createForm);
 
-    return () => {
-      script.removeEventListener("load", createForm);
-    };
+      return () => {
+        script.removeEventListener("load", createForm);
+      };
+    }
   }, []);
 };

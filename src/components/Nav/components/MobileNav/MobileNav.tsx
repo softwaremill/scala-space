@@ -6,6 +6,8 @@ import globalStyles from "@css/globals.module.scss";
 import styles from "./MobileNav.module.scss";
 
 export const MobileNav = ({ isOpen, onToggle }: SidebarProps) => {
+  if (typeof document === "undefined") return;
+
   const sidebarHook = document.getElementById("sidebar-hook");
 
   if (sidebarHook === null) return;

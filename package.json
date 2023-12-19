@@ -19,10 +19,13 @@
     "@react-google-maps/api": "^2.19.2",
     "docusaurus-plugin-hubspot": "^1.0.1",
     "docusaurus-plugin-sass": "^0.2.5",
+    "dotenv": "^16.3.1",
     "google-map-react": "^2.2.1",
+    "mapbox-gl": "^3.0.1",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-mapbox-gl": "^5.1.1",
     "sass": "^1.69.5"
   },
   "devDependencies": {

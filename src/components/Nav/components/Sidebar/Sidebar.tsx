@@ -2,7 +2,7 @@ import Link from "@docusaurus/Link";
 import { type SidebarProps } from "@interfaces/sidebar";
 import { Button } from "@components/Button/Button";
 import Logo from "@assets/icons/brands/scalaspace-color.svg";
-import Close from "@assets/icons/utils/close.svg";
+import Close from "@assets/icons/utils/close-gray.svg";
 import sidebarLinks from "@source/sidebar-links.json";
 import styles from "./Sidebar.module.scss";
 

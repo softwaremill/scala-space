@@ -1,3 +1,4 @@
+import "dotenv/config";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
@@ -13,6 +14,9 @@ const config: Config = {
   projectName: "scala.space",
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "warn",
+  customFields: {
+    mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+  },
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -49,6 +53,7 @@ const config: Config = {
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap",
+    "https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css",
   ],
 };
 

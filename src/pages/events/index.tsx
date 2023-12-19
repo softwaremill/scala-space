@@ -3,6 +3,8 @@ import { Layout } from "@components/Layout/Layout";
 import { Events } from "@partials/EventsPage/Events/Events";
 import { EventCards } from "@partials/EventCards/EventCards";
 import { Newsletter } from "@partials/Newsletter/Newsletter";
+import { EventsMap } from "@partials/EventsPage/EventsMap/EventsMap";
+import { Hero } from "@partials/EventsPage/Hero/Hero";
 
 export default function EventsPage() {
   return (
@@ -10,6 +12,8 @@ export default function EventsPage() {
       title="Scala Space"
       description="Learn about our tooling, OSS, nd the ecosystems we help build, use, and participate in."
     >
+      <Hero />
+      <EventsMap />
       <Events>
         <EventCards events={events} />
       </Events>

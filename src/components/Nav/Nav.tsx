@@ -4,11 +4,11 @@ import { useScroll } from "@hooks/useScroll";
 import { useScreenDetector } from "@hooks/useScreenDetector";
 import { Button } from "@components/Button/Button";
 import { MobileNav } from "./components/MobileNav/MobileNav";
+import { DesktopNav } from "./components/DesktopNav/DesktopNav";
 import Logo from "@assets/icons/brands/scalaspace-color.svg";
 import { type Classes } from "./Nav.types";
 import globalStyles from "@css/globals.module.scss";
 import styles from "./Nav.module.scss";
-import { DesktopNav } from "./components/DesktopNav/DesktopNav";
 
 const classes: Classes = {
   up: "visible",
@@ -37,7 +37,7 @@ export const Nav = () => {
           <Button
             to="/contact"
             variant="secondary"
-            classes={globalStyles["ml-auto"]}
+            classes={`${globalStyles["ml-auto"]} ${styles["contact-btn"]}`}
             type="internal"
           >
             Talk to Us

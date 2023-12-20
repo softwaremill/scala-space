@@ -1,6 +1,6 @@
 import { Layout } from "@components/Layout/Layout";
-import { Form } from "@partials/Contact/Form/Form";
-import { GDPR } from "@partials/Contact/GDPR/GDPR";
+import { Form } from "@partials/ContactPage/Form/Form";
+import { GDPR } from "@partials/ContactPage/GDPR/GDPR";
 
 export default function Contact() {
   return (

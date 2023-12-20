@@ -16,6 +16,8 @@ const config: Config = {
   onBrokenMarkdownLinks: "warn",
   customFields: {
     mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+    hubspotPortalId: process.env.HUBSPOT_PORTAL_ID,
+    hubspotFormId: process.env.HUBSPOT_FORM_ID,
   },
   i18n: {
     defaultLocale: "en",
@@ -49,6 +51,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {} satisfies Preset.ThemeConfig,
+  scripts: ["https://js.hsforms.net/forms/v2.js"],
   clientModules: ["./src/scripts/sidebar.ts"],
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap",

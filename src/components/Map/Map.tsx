@@ -1,9 +1,11 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import ReactMapboxGl from "react-mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import { MapContextProvider } from "./context/MapContext";
 import { MapProps } from "./Map.types";
 import { mapConfig } from "./Map.constants";
 import { Locator } from "./components/Locator/Locator";
-import "mapbox-gl/dist/mapbox-gl.css";
+import styles from "./Map.module.scss";
 
 export const Map = ({ markers }: MapProps) => {
   const {
@@ -14,15 +16,17 @@ export const Map = ({ markers }: MapProps) => {
   const MapBox = ReactMapboxGl({ accessToken });
 
   return (
-    <MapBox
-      style={mapConfig.style}
-      containerStyle={mapConfig.containerStyle}
-      zoom={[mapConfig.initialZoom]}
-      center={[mapConfig.initialLon, mapConfig.initialLat]}
-    >
-      {markers.map((el) => (
-        <Locator key={el.id} {...el} />
-      ))}
-    </MapBox>
+    <MapContextProvider>
+      <MapBox
+        style={mapConfig.style}
+        className={styles.container}
+        zoom={[mapConfig.initialZoom]}
+        center={[mapConfig.initialLon, mapConfig.initialLat]}
+      >
+        {markers.map((el) => (
+          <Locator key={el.id} {...el} />
+        ))}
+      </MapBox>
+    </MapContextProvider>
   );
 };

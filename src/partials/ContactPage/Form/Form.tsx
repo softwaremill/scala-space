@@ -1,10 +1,23 @@
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { Spinner } from "@components/Spinner/Spinner";
-import { useCreateForm } from "./useCreateForm";
 import globalStyles from "@css/globals.module.scss";
 import styles from "./Form.module.scss";
+import { useEffect } from "react";
 
 export const Form = () => {
-  useCreateForm();
+  const {
+    siteConfig: { customFields },
+  } = useDocusaurusContext();
+
+  useEffect(() => {
+    if (window.hbspt) {
+      window.hbspt.forms.create({
+        portalId: customFields!.hubspotPortalId,
+        formId: customFields!.hubspotFormId,
+        target: "#hubspot-form",
+      });
+    }
+  }, []);
 
   return (
     <div className={`${globalStyles.section} ${styles.container}`}>

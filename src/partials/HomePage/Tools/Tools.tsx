@@ -4,7 +4,7 @@ import globalStyles from "@css/globals.module.scss";
 import styles from "./Tools.module.scss";
 
 export const Tools = () => (
-  <div className={styles.container}>
+  <section className={styles.container}>
     <div className={styles.header}>
       <h2 className={globalStyles.h2}>
         <span className={globalStyles["color-primary"]}>
@@ -19,5 +19,5 @@ export const Tools = () => (
         <Tool key={tool.id} {...tool} />
       ))}
     </div>
-  </div>
+  </section>
 );

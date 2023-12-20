@@ -1,5 +1,11 @@
 @import "@css/variables";
 
+.section {
+  @media (min-width: ($breakpoint-mobile)) {
+    padding: 90px 90px 0 90px;
+  }
+}
+
 .events {
   @media (min-width: ($breakpoint-mobile)) {
     max-width: $max-width;

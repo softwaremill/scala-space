@@ -3,6 +3,7 @@ import socials from "@source/footer-socials.json";
 import X from "@assets/icons/socials/x.svg";
 import Instagram from "@assets/icons/socials/instagram.svg";
 import Linkedin from "@assets/icons/socials/linkedin.svg";
+import styles from "./Socials.module.scss";
 
 type SocialIcon = {
   [key: string]: ComponentType<SVGProps<SVGSVGElement>>;
@@ -21,7 +22,7 @@ export const Socials = () => (
 
       return (
         <li key={social.brand}>
-          <a href={social.to} target="_blank">
+          <a href={social.to} target="_blank" className={styles.icon}>
             <Icon width={28} height={28} />
           </a>
         </li>

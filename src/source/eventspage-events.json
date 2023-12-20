@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Join Scalar Conference",
+    "description": "Scalar - a single-track Scala conference the community love!\n\nSince 2014, Scalarians meet and discuss latest Scala trends, use cases, and future plans.",
+    "link": {
+      "to": "https://www.scalar-conf.com/",
+      "label": "Contribute"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Join our local meetups",
+    "description": "Grab a drink of choice and let's have fun with Scala and FP.\n\nBrowse upcoming local Scala User Groups that are happening in your areal!",
+    "link": {
+      "to": "https://www.meetup.com/topics/scala/all",
+      "label": "Use"
+    }
+  }
+]

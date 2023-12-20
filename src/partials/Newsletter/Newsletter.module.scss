@@ -1,0 +1,21 @@
+@import "@css/variables";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 30px;
+
+  @media (min-width: ($breakpoint-mobile)) {
+    align-items: center;
+    padding: 90px 30px;
+
+    a {
+      width: initial;
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+}

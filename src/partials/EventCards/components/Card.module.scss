@@ -1,0 +1,53 @@
+@import "@css/variables";
+
+.container {
+  padding: 50px 30px;
+  background-color: $color-white;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $color-gray-200;
+
+    @media (min-width: ($breakpoint-mobile)) {
+      border-bottom: none;
+    }
+  }
+
+  &:last-of-type {
+    @media (min-width: ($breakpoint-mobile)) {
+      .card::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  p {
+    text-align: center;
+    white-space: pre-line;
+  }
+
+  @media (min-width: ($breakpoint-mobile)) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -30px;
+      display: block;
+      height: 100%;
+      border-right: 1px solid $color-gray-200;
+    }
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,54 @@
+@import "@css/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 160px;
+  background-image: url("@assets/images/contact/bg-contact-mobile.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: ($breakpoint-mobile)) {
+    background-image: url("@assets/images/contact/bg-contact-desktop.webp");
+  }
+}
+
+.heading {
+  @media (min-width: ($breakpoint-mobile)) {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.title-suffix {
+  font-family: $font-secondary;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 34px;
+  color: $color-light;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 670px;
+  padding: 50px 0 30px 0;
+  color: $color-light;
+
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $color-light;
+  }
+}

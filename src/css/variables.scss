@@ -1,27 +1,27 @@
-:root {
-  --color-primary: #de3d3b;
-
-  --color-accent-light: #00c859;
-  --color-accent-dark: #00a74e;
-
-  --color-grey: #c0c0c0;
-
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-navbar-link-color: #fff;
-  --ifm-hero-text-color: #ececec;
-
-  --basic-light: #ececec;
-  --basic-dark: #000;
-  --inactive: #3c3c3c;
-
-  --ifm-spacing-horizontal: 4rem;
-
-  --font-primary: "Source Sans 3";
-  --font-secondary: "Space Grotesk";
-
-  --border: 1px solid var(--color-grey);
-}
-
-$breakpoint-desktop: 1320px;
+$max-width: 1320px;
 $breakpoint-mobile: 768px;
+
+$font-primary: "Source Sans 3";
+$font-secondary: "Space Grotesk";
+
+$font-size-xs: 14px;
+$font-size-sm: 18px;
+$font-size-md: 21px;
+$font-size-lg: 25px;
+$font-size-xl: 28px;
+$font-size-2xl: 35px;
+$font-size-3xl: 60px;
+$font-size-4xl: 120px;
+
+$color-white: #fff;
+$color-light: #ececec;
+$color-dark: #000;
+$color-primary: #de3d3b;
+$color-secondary: #00a74e;
+
+$color-gray: #494949;
+$color-gray-100: #a1a1a1;
+$color-gray-200: #bababa;
+$color-gray-300: #e1e1e1;
+$color-gray-400: #c6c6c6;
+$color-gray-500: #848484;

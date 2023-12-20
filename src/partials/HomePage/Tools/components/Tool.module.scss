@@ -1,0 +1,34 @@
+@import "@css/variables";
+
+.tool {
+  background-color: $color-white;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: ($breakpoint-mobile)) {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $color-gray-200;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+
+  @media (min-width: ($breakpoint-mobile)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

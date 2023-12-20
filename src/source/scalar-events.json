@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "coordinates": [21.0051, 52.2146],
+    "title": "Scalar Conference",
+    "date": "05 APR 2014",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2014/"
+  },
+  {
+    "id": 2,
+    "coordinates": [21.0051, 52.2148],
+    "title": "Scalar Conference",
+    "date": "11 APR 2015",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2015/"
+  },
+  {
+    "id": 3,
+    "coordinates": [21.0047, 52.2148],
+    "title": "Scalar Conference",
+    "date": "16 APR 2016",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2016/"
+  },
+  {
+    "id": 4,
+    "coordinates": [20.9933, 52.2498],
+    "title": "Scalar Conference",
+    "date": "07-08 APR 2017",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2017/"
+  },
+  {
+    "id": 5,
+    "coordinates": [20.9935, 52.2495],
+    "title": "Scalar Conference",
+    "date": "06-07 APR 2018",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2018/"
+  },
+  {
+    "id": 6,
+    "coordinates": [20.9932, 52.2496],
+    "title": "Scalar Conference",
+    "date": "05-06 APR 2019",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2019/"
+  },
+  {
+    "id": 7,
+    "coordinates": [21.017532, 52.237049],
+    "title": "Scalar Conference",
+    "date": "15 MAY 2020",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://old.scalar-conf.com/2020/"
+  },
+  {
+    "id": 8,
+    "coordinates": [20.993, 52.2492],
+    "title": "Scalar Conference",
+    "date": "23-24 MAR 2023",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://typeville-56ef49ad5026668-ed79806885b0c.webflow.io/"
+  },
+  {
+    "id": 9,
+    "coordinates": [20.9926, 52.2496],
+    "title": "Scalar Conference",
+    "date": "21-22 MAR 2024",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://www.scalar-conf.com/"
+  }
+]

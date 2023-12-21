@@ -7,7 +7,7 @@
     "links": [
       {
         "to": "https://docs.scala-lang.org/toolkit/http-client-intro.html",
-        "label": "Munis"
+        "label": "Munit"
       },
       {
         "to": "https://docs.scala-lang.org/toolkit/http-client-intro.html",
@@ -32,6 +32,10 @@
       {
         "to": "https://github.com/softwaremill/tapir",
         "label": "Tapir"
+      },
+      {
+        "to": "https://docs.scala-lang.org/toolkit/http-client-intro.html",
+        "label": "sttp"
       },
       {
         "to": "https://github.com/scalameta/metals",

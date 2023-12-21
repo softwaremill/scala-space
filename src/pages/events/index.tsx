@@ -10,7 +10,7 @@ export default function EventsPage() {
   return (
     <Layout
       title="Scala Space"
-      description="Learn about our tooling, OSS, nd the ecosystems we help build, use, and participate in."
+      description="Learn about our tooling, OSS, and the ecosystems we help build, use, and participate in."
     >
       <Hero />
       <EventsMap />

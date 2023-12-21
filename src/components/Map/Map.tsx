@@ -1,5 +1,5 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import ReactMapboxGl from "react-mapbox-gl";
+import ReactMapboxGl, { ZoomControl } from "react-mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { MapContextProvider } from "./context/MapContext";
 import { MapProps } from "./Map.types";
@@ -13,7 +13,7 @@ export const Map = ({ markers }: MapProps) => {
   } = useDocusaurusContext();
 
   const accessToken = customFields!.mapboxAccessToken as string;
-  const MapBox = ReactMapboxGl({ accessToken });
+  const MapBox = ReactMapboxGl({ accessToken, scrollZoom: false });
 
   return (
     <MapContextProvider>
@@ -23,9 +23,12 @@ export const Map = ({ markers }: MapProps) => {
         zoom={[mapConfig.initialZoom]}
         center={[mapConfig.initialLon, mapConfig.initialLat]}
       >
-        {markers.map((el) => (
-          <Locator key={el.id} {...el} />
-        ))}
+        <>
+          {markers.map((el) => (
+            <Locator key={el.id} {...el} />
+          ))}
+          <ZoomControl position="bottom-right" />
+        </>
       </MapBox>
     </MapContextProvider>
   );

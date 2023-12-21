@@ -1,5 +1,4 @@
 import { Button } from "@components/Button/Button";
-import ScalaTimes from "@assets/images/scala-times.webp";
 import globalStyles from "@css/globals.module.scss";
 import styles from "./Newsletter.module.scss";
 
@@ -15,8 +14,13 @@ export const Newsletter = () => (
     >
       Join the newsletter
     </Button>
-    <div className={styles.logo}>
-      <img src={ScalaTimes} alt="Scala Times" width={187} height={49} />
-    </div>
+    <a className={styles.logo} href="https://scalatimes.com/" target="_blank">
+      <p className={styles.top}>
+        <span>&nbsp;⋆&nbsp;⋆&nbsp;</span>Est. 2014
+        <span>&nbsp;⋆&nbsp;⋆&nbsp;</span>
+      </p>
+      <p className={styles.middle}>Scala Times</p>
+      <p className={styles.bottom}>Weekly Scala newspaper</p>
+    </a>
   </section>
 );

@@ -1,0 +1,12 @@
+@import "@css/variables";
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: $color-gray-400;
+}

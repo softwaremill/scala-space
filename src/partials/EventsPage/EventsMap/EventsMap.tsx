@@ -1,5 +1,5 @@
 import { Map } from "@components/Map/Map";
-import scalarEvents from "@source/scalar-events.json";
+import scalarEvents from "@source/scala-events.json";
 
 export const EventsMap = () => (
   <section>

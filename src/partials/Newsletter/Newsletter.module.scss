@@ -16,6 +16,34 @@
   }
 }
 
-.logo {
+.logo,
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active {
   text-align: center;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.top {
+  font-size: 1.42em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+.middle {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+}
+
+.bottom {
+  font-size: 1.42em;
+  text-transform: uppercase;
+  font-family: Courier, monospace;
+  font-weight: 400;
 }

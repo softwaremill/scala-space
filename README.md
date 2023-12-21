@@ -13,7 +13,7 @@ The website can be viewed at: https://scalaspace.virtuslab.com/
 ## Installation
 
 ```
-$ yarn
+yarn
 ```
 
 <div style="margin-bottom:50px;"></div>
@@ -37,7 +37,7 @@ HUBSPOT_FORM_ID=
 The following command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ```
-$ yarn start
+yarn start
 ```
 
 <div style="margin-bottom:50px;"></div>
@@ -47,7 +47,7 @@ $ yarn start
 The following command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ```
-$ yarn build
+yarn build
 ```
 
 <div style="margin-bottom:50px;"></div>
@@ -85,7 +85,7 @@ Changing, deleting or adding data in any of these files will automatically be re
 
 For the application to function properly, the structure of each `.json` file must be maintained.
 
-For example: to add another Scalar conference, add another object in the `src/source/scalar-events.json` file with the structure:
+For example: to add another Scalar conference, add another object in the `src/source/scala-events.json` file with the structure:
 
 ```json
 {

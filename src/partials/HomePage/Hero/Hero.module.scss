@@ -56,3 +56,21 @@
     max-width: 380px;
   }
 }
+
+.sml {
+  background-image: url("@assets/icons/brands/softwaremill-logo.svg"),
+    url("@assets/icons/brands/softwaremill-text.svg");
+  background-repeat: no-repeat;
+  background-size: 45px, 105px;
+  background-position:
+    10px 75%,
+    calc(100% - 10px) 68%;
+
+  @media (min-width: ($breakpoint-mobile)) {
+    flex: 2 !important;
+    background-size: 60px, 140px;
+    background-position:
+      15px 80%,
+      calc(100% - 15px) 70%;
+  }
+}

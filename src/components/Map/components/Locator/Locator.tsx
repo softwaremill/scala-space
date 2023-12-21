@@ -29,7 +29,7 @@ export const Locator = ({
   };
 
   return (
-    <Marker coordinates={coordinates} anchor="top">
+    <Marker coordinates={coordinates} anchor="bottom">
       <div className={styles.locator}>
         <Toolitip {...tooltipProps} />
         <div onClick={handleMarkerClick}>

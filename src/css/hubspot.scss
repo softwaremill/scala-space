@@ -11,6 +11,11 @@
   }
 }
 
+.hs_error_rollup {
+  position: relative;
+  top: -45px;
+}
+
 ul.no-list.hs-error-msgs.inputs-list {
   position: absolute;
   bottom: -35px;
@@ -20,7 +25,7 @@ ul.no-list.hs-error-msgs.inputs-list {
 
 textarea.hs-input,
 input.hs-input {
-  outline: none;
+  outline: 2px solid transparent;
   border: none;
   background: transparent;
   border-bottom: 1px solid $color-gray-100;
@@ -28,6 +33,11 @@ input.hs-input {
   width: 100%;
   height: 50px;
   padding-left: 10px;
+
+  &:focus {
+    outline: 2px solid $color-secondary;
+    border-radius: 5px;
+  }
 }
 
 textarea.hs-input {
@@ -55,6 +65,7 @@ input[type="submit"].hs-button {
   font-family: $font-primary;
   font-weight: 600;
   line-height: 42px;
+  cursor: pointer;
 }
 
 .hs-submit .actions {

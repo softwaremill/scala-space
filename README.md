@@ -85,7 +85,7 @@ Changing, deleting or adding data in any of these files will automatically be re
 
 For the application to function properly, the structure of each `.json` file must be maintained.
 
-For example: to add another Scalar conference, add another object in the `src/source/scalar-events.json` file with the structure:
+For example: to add another Scalar conference, add another object in the `src/source/scala-events.json` file with the structure:
 
 ```json
 {

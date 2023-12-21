@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "coordinates": [20.9926, 52.2496],
+    "title": "Scalar Conference",
+    "date": "21-22 MAR 2024",
+    "description": "Get ready for two days of immersive functional programming experience with the great community.",
+    "link": "https://www.scalar-conf.com/"
+  },
+  {
+    "id": 2,
+    "coordinates": [-105.50950503165066, 40.37474091471788],
+    "title": "Lambda Conf",
+    "date": "6-7 MAY 2024",
+    "description": "While LambdaConf broadens its horizons in 2024, you will find plenty of content on functional programming, and move on to discover mind-expanding talks on new theory and practice behind the hottest and latest developments in software development.",
+    "link": "https://www.lambdaconf.us/"
+  },
+  {
+    "id": 3,
+    "coordinates": [19.925203998020564, 50.062831169064125],
+    "title": "Lambda Days",
+    "date": "27-28 MAY 2024",
+    "description": "Come to beautiful, sunny Krakow for Lambda Days to find out what is possible with functional programming - explore the latest in battle-tested Scala, Erlang and Haskell, experience the energy that F# and Elixir bring to the table, connect with the innovators working with Elm, Luna and Ocaml and see what will come next!",
+    "link": "https://www.lambdadays.org/lambdadays2024"
+  },
+  {
+    "id": 4,
+    "coordinates": [139.77620691481147, 35.620891736540756],
+    "title": "Scala Matsuri",
+    "date": "7-9 JUN 2024",
+    "description": "The largest international Scala conference in Asia on 7th-9th June. 2024 Tokyo International Exchange Center Plaza Heisei",
+    "link": "https://scalamatsuri.org/"
+  },
+  {
+    "id": 5,
+    "coordinates": [6.94635504738161, 50.33328514458904],
+    "title": "Java Land",
+    "date": "9-11 APR 2024",
+    "description": "The anniversary edition of JavaLand will take place from April 9 to 11, 2024 at Nürburgring. Two days of conference, one training day, ten years of JavaLand – Jatumba! Purchase your ticket until February 15 at the exclusive early bird price and book your accommodation right at the same time.",
+    "link": "https://dev.events/conferences/java-land-bruhl-1-2024"
+  },
+  {
+    "id": 6,
+    "coordinates": [8.276160124452423, 50.00183320523286],
+    "title": "jax",
+    "date": "22-26 APR 2024",
+    "description": "The Conference for Java, Architecture and Software Innovation",
+    "link": "https://dev.events/conferences/jax-mainz-3-2024"
+  },
+  {
+    "id": 7,
+    "coordinates": [6.944945241128163, 50.94792636920368],
+    "title": "JCON EUROPE",
+    "date": "13-16 MAY 2024",
+    "description": "JCON EUROPE 2024 is the in-person Java community conference in Germany organized by the Java User Group Oberpfalz in cooperation with JAVAPRO Magazine. Java is our profession and JCON is our passion and a lot of fun. We love to provide Java developers with a spectacular 100% live conference open to the entire Java-User-Group communities.",
+    "link": "https://2024.europe.jcon.one/"
+  },
+  {
+    "id": 8,
+    "coordinates": [19.98502857358248, 50.08914741687922],
+    "title": "geecon",
+    "date": "15-17 MAY 2024",
+    "description": "Java and JVM based technologies, dynamic languages, enterprise architectures, patterns, distributed computing, software craftsmanship, mobile and much more.",
+    "link": "https://2024.geecon.org/"
+  },
+  {
+    "id": 9,
+    "coordinates": [13.59222951766265, 45.514417577350464],
+    "title": "MakeIT & JCON Slovenia",
+    "date": "29-31 MAY 2024",
+    "description": "MakeIT 2024 serves as the umbrella event name for this year's conference. MakeIT is centered around Oracle technologies (Cloud, APEX, PL/SQL, Oracle Database), while JCON OpenBlend Slovenia is a community event with a focus on Java and open-source technologies. Both of these events are in-person and will be hosted at the Convention Centre Portus in Portorož, Slovenia.",
+    "link": "https://makeit.si/"
+  },
+  {
+    "id": 10,
+    "coordinates": [-122.4104535446567, 37.78898811002977],
+    "title": "Code BEAM America",
+    "date": "7-8 MAR 2024",
+    "description": "Erlang and Elixir share the same Virtual Machine, the BEAM. This ingenious little bit of technology is perfect for fault-tolerant, resilient applications that scale to billions of users, which is one of the biggest challenges facing developers and companies today. Code BEAM has united Erlang & Elixir developers for years to grow and progress the community in the spirit of Share. Learn. Inspire.",
+    "link": "https://codebeamamerica.com/"
+  },
+  {
+    "id": 11,
+    "coordinates": [23.75427471117055, 37.98087882155927],
+    "title": "Devoxx Greece",
+    "date": "18-20 APR 2024",
+    "description": "Devoxx Greece 2024, second edition will take place from April 18th until the 20th in the Athens Megaron International Conference Center.\n\nDevoxx Greece is the evolution of Voxxed Days Athens conference and has become a 3-days conference where the developers' communities get together and explore the latest technology advancements with some of the most inspiring speakers in our sector",
+    "link": "https://devoxx.gr/"
+  },
+  {
+    "id": 12,
+    "coordinates": [-0.10512340193172494, 51.53569572891178],
+    "title": "Devoxx UK",
+    "date": "8-10 MAY 2024",
+    "description": "Join us in London for a global gathering of the developer community at Devoxx UK 2024. A diverse group of inspiring speakers from around the world will cover vital developer-focused topics and share the latest technology advances.\n\nWe invite you to delve into fascinating ideas, expand your knowledge and elevate your skills. Our aim is to help you be your best developer self. ",
+    "link": "https://www.devoxx.co.uk/"
+  },
+  {
+    "id": 13,
+    "coordinates": [4.4167562686703, 51.24602905997968],
+    "title": "Devoxx Belgium",
+    "date": "7-11 OCT 22024",
+    "description": "Devoxx is a conference by developers, for developers. It is offered at an affordable price so that every developer can enjoy the experience.",
+    "link": "https://devoxx.be/"
+  },
+  {
+    "id": 14,
+    "coordinates": [2.2836561506609647, 48.87950418058201],
+    "title": "Devoxx France",
+    "date": "17-18 APR 2024",
+    "description": "Devoxx France is an opportunity to meet people, discover the latest technologies and participate in a great community event. Developers, software architects, decision makers: the 3 days of conferences and workshops allow everyone to discover the latest trends in the Java world, and beyond.",
+    "link": "https://www.devoxx.fr/en/"
+  },
+  {
+    "id": 15,
+    "coordinates": [19.931755255691055, 50.047853576906],
+    "title": "Devoxx Poland",
+    "date": "19-21 JUN 2024",
+    "description": "During 3 days, 2.700 Devoxxians from 20 different countries attend Devoxx Poland including 100+ speakers and another 600K developers enjoy the presentations online. Making Devoxx the biggest Java conference in Poland.",
+    "link": "https://devoxx.pl/"
+  }
+]

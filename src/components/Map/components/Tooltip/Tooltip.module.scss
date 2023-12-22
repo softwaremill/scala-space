@@ -2,16 +2,20 @@
 
 .tooltip-container {
   display: none;
-  position: absolute;
-  bottom: 60px;
-  left: -39px;
-  width: 360px;
-  border-radius: 5px;
   background-color: $color-white;
-  z-index: 4;
+  border-bottom: 1px solid $color-gray-200;
 
   &.opened {
     display: block;
+  }
+
+  @media (min-width: ($breakpoint-mobile)) {
+    position: absolute;
+    bottom: 60px;
+    left: -39px;
+    width: 360px;
+    border-radius: 5px;
+    z-index: 4;
   }
 }
 
@@ -22,14 +26,16 @@
   row-gap: 30px;
   padding: 30px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    left: 30px;
-    border-width: 20px;
-    border-style: solid;
-    border-color: $color-white transparent transparent transparent;
+  @media (min-width: ($breakpoint-mobile)) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 30px;
+      border-width: 20px;
+      border-style: solid;
+      border-color: $color-white transparent transparent transparent;
+    }
   }
 }
 

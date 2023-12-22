@@ -30,6 +30,7 @@ export const Map = ({ markers }: MapProps) => {
           <ZoomControl position="bottom-right" />
         </>
       </MapBox>
+      <div id="tooltip-hook" />
     </MapContextProvider>
   );
 };

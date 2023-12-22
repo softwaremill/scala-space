@@ -19,7 +19,7 @@ export const Toolitip = forwardRef<HTMLInputElement, TooltipProps>(
     };
 
     return (
-      <div className={tooltipContainerStyles} ref={ref} id={`${id}`}>
+      <div className={tooltipContainerStyles} ref={ref}>
         <div className={styles.tooltip}>
           <button className={styles.close} onClick={onCloseTooltip}>
             <Close />
